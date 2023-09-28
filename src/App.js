@@ -113,7 +113,7 @@ function App() {
       } catch (error) {
         console.error('Error fetching guests:', error);
       } finally {
-        setIsLoading(false); // <-- This line sets loading to false after fetch
+        setIsLoading(false);
       }
     };
 
@@ -149,7 +149,6 @@ function App() {
 
           <ul>
             {guests.map((guest, index) => (
-              // eslint-disable-next-line react/no-array-index-key
               <li key={index}>
                 {`${guest.firstName} ${guest.lastName}`}
                 <input

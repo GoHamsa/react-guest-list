@@ -18,7 +18,6 @@ function App() {
         attending: false,
       };
 
-      // Send the new guest data to the API
       try {
         const response = await fetch('http://localhost:4000/guests', {
           method: 'POST',
